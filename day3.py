@@ -1,26 +1,26 @@
 n = int(input("Enter the number of operations"))
-operations = []
-print("Enter the", n ,"operations")
+operation = []
+print("Enter the", n ,"operation")
 for i in range(n):
-    operations.append(input())
+    operation.append(input())
 stk = []
-print(operations)
+print(operation)
 for i in range(n):
-    if operations[i][0] == "A":
+    if operation[i][0] == "A":
         temp = []
-        temp = operations[i].split()
+        temp = operation[i].split()
         stk.append(int(temp[1]))
-    elif operations[i] == "Remove":
+    elif operation[i] == "Remove":
         if len(stk) == 0:
             print("Invalid")
         else:
             stk.pop()
-    elif operations[i] == "CallMax":
+    elif operation[i] == "CallMax":
         if len(stk) == 0:
             print("Invalid")
         else:
             print(max(stk))
-    elif operations[i] == "CallMin":
+    elif operation[i] == "CallMin":
         if len(stk) == 0:
             print("Invalid")
         else:
