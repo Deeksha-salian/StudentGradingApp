@@ -1,4 +1,4 @@
-n = int(input("Enter the number of operations"))
+num = int(input("Enter the number of operations"))
 operation = []
 print("Enter the", n ,"operation")
 for i in range(n):
